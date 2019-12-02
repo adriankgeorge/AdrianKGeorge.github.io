@@ -33,6 +33,13 @@
 
 .portfolio-item {
     text-align: center;
+
+}
+
+.portfolio-item-title {
+    text-align: center;
+    font-weight: 600;
+
 }
 
 .portfolio-subheader {
