@@ -1,64 +1,102 @@
 <!DOCTYPE HTML>
 <html lang="en">
 
-<head>
-    <title>Anna George | Portfolio </title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1"/>
-    <meta name="keywords" content="maps, cartography"/>
+<!-- Header -->
+    <head>
+        <title>Anna George | Portfolio </title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <meta name="keywords" content="maps, cartography"/>
 
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/bootstrap-theme.min.css">
-    <link rel="stylesheet" href="css/style.css">
-</head>
+        <!-- external stylesheets -->
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+        <link rel="stylesheet" href="css/style.css">
+    </head>
 
 
 
-<body>
+    <body>
 
-    <!External Scripts>
-    <script type="text/javascript" src="lib/jquery-3.4.1.min.js"></script>
-    <script type="text/javascript" src="lib/bootstrap.min.js"></script>
+        <!-- Navigation Bar -->
+        <nav class="navbar navbar-light">
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+            <a class="navbar-brand" href="#">Anna E George</a>
+            <ul class="navbar-nav mr-auto mt-2 mt-lg-2">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="research.html">Research</a>
+              </li>
+              <li class="nav-item active">
+                <a class="nav-link" href="portfolio.html">Portfolio <span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="assets/GeorgeAnnaE_CV.pdf">CV</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
 
-    <!Navigation Bar>
-    <nav class="navbar navbar-light">
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-        <a class="navbar-brand" href="#">Anna E George</a>
-        <ul class="navbar-nav mr-auto mt-2 mt-lg-2">
-          <li class="nav-item">
-            <a class="nav-link" href="index.html">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="research.html">Research</a>
-          </li>
-          <li class="nav-item active">
-            <a class="nav-link" href="portfolio.html">Portfolio <span class="sr-only">(current)</span></a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="assets/GeorgeAnna_CV.pdf">CV</a>
-          </li>
-        </ul>
-      </div>
-    </nav>
+        <!-- Portfolio page header -->
+        <div class="page-header all-page-header">
+            <h1>🍃 Portfolio 🍃</h1>
+            <p class="lead portfolio-subheader">I enjoy making maps that bring environmental or environmental policy data to a broader audience. Several of the maps shown here visualize data from the <a class="link" href=https://www.neotomadb.org/>Neotoma Paleoecology Database</a>, a resource that supports data, research, and education on paleoenvironments.</p>
+        </div>
 
-    <div class="page-header text-center">
-        <h1>🍃 Portfolio 🍃</h1>
-    </div>
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-md-6">
-                <div class="thumbnail portfolio-thumbnail">
-                    portfolio item #1
+        <!-- portfolio pieces section -->
+        <div class="container port-container">
+            <div class="row">
+                <div class="col-md-6 col-xs-3">
+                    <div class="thumbnail portfolio-thumbnail">
+                        <a href="https://geography.wisc.edu/cartography/education/G575/2019SP/pollen/index.html">
+                            <img src="assets/IceAgeTreeExplorer.png" alt="Ice Age Tree Explorer: an interactive proportional symbols map of pollen over time" />
+                        </a>
+                    </div>
+                    <h5 class="portfolio-item">Ice Age Tree Explorer</h5>
+                    <p class="portfolio-item">An online interactive map developed with Leaflet for exploring data on North America's paleoecological history.
+                         It expresses the data in two ways: a heat map of all pollen data and proportional symbols showing pollen data at individual sites.
+                         You can sequence through time, overlay ice sheets, and retrieve information on science and context.</p>
                 </div>
-            </div>
-            <div class="col-md-6">
-                <div class="thumbnail portfolio-thumbnail">
-                    portfolio item #2
+                <div class="col-md-6 col-xs-3">
+                    <div class="thumbnail portfolio-thumbnail">
+                        <a href="assets/WhenCongressFailsEnvironment.png">
+                            <img src="assets/WhenCongressFailsEnvironment.png" alt="Infographic about congress voting records and fossil fuel political donations" />
+                        </a>
+                    </div>
+                    <h5 class="portfolio-item">When Congress Fails the Environment</h5>
+                    <p class="portfolio-item">An infographic about Congressional voting records, fossil fuel political donations, and US
+                        residents' attitudes towards the environment, made using IndieMapper and Adobe Illustrator.</p>
+                </div>
+                <div class="col-md-6 col-xs-3">
+                    <div class="thumbnail portfolio-thumbnail">
+                        <img src="assets/ThreePerfectDaysinHappyValley.png" alt="Tourist map of the Pioneer Valley, Massachusetts" />
+                    </div>
+                    <h5 class="portfolio-item">Three Perfect Days in the Happy Valley</h5>
+                    <p class="portfolio-item">A tourist map showing the fall landscape and attractions of the Pioneer Valley in western
+                        Massachusetts, made using ArcGIS, Adobe Photoshop, and Adobe Illustrator.</p>
+                </div>
+                <div class="col-md-6 col-xs-3">
+                    <div class="img-thumbnail portfolio-thumbnail">
+                        <a href="http://paleo.geography.wisc.edu/">
+                            <img src="assets/IceAgeMapper.png" alt="Ice Age Mapper interactive map" />
+                        </a>
+                    </div>
+                    <h5 class="portfolio-item">Ice Age Mapper</h5>
+                    <p class="portfolio-item">An online interactive map made with D3 visualizing the most up-to-date paleoecology data pulled from the Neotoma Paleoecology
+                        Database. You can look at individual site data and filter the sites by time, latitude, abundance, and investigator.
                 </div>
             </div>
         </div>
-    </div>
-</body>
+
+        <!-- External Scripts -->
+        <script type="text/javascript" src="lib/jquery-3.4.1.min.js"></script>
+        <script type="text/javascript" src="lib/bootstrap.min.js"></script>
+
+    </body>
+
+</html>

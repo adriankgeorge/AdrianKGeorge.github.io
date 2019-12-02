@@ -1,7 +1,40 @@
-.portfolio-thumbnail {
-  background-color: green;
-  border-width: 4px;
-  border-style: solid;
-  border-color: #1e5915;
+/* Home page styling*/
+.jumbotron-home {
+    padding-top: 5%;
+    background-color: #b2ccaf;
+}
 
+.home-photo-container{
+    padding-bottom: 5%
+}
+
+/* General page header styling */
+.all-page-header {
+    text-align: center;
+    padding-left: 4%;
+    padding-right: 4%;
+    padding-bottom: 1%;
+}
+
+/* Research page styling */
+.section-container {
+    padding-top: 2%
+}
+
+.paragraph {
+    text-align: left;
+}
+
+/* Portfolio page styling*/
+.portfolio-thumbnail img {
+    max-width: 100%;
+    height: auto;
+}
+
+.portfolio-item {
+    text-align: center;
+}
+
+.portfolio-subheader {
+    padding-bottom: 1%
 }
