@@ -1,0 +1,189 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<!-- Header -->
+    <head>
+        <title>Anna George | Portfolio | O'Keeffe Style Map</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <meta name="keywords" content="maps, cartography"/>
+
+        <!-- external stylesheets -->
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+        <link rel="stylesheet" href="css/style.css">
+
+<script src="https://api.mapbox.com/mapbox-gl-js/v1.7.0/mapbox-gl.js"></script>
+<link href="https://api.mapbox.com/mapbox-gl-js/v1.7.0/mapbox-gl.css" rel="stylesheet" />
+
+    </head>
+
+
+    <body>
+        <!-- External Scripts -->
+        <script type="text/javascript" src="lib/jquery-3.4.1.min.js"></script>
+        <script type="text/javascript" src="lib/bootstrap.min.js"></script>
+
+        <!-- Navigation Bar -->
+        <nav class="navbar navbar-light">
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+            <a class="navbar-brand" href="#">Anna E George</a>
+            <ul class="navbar-nav mr-auto mt-2 mt-lg-2">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="research.html">Research</a>
+              </li>
+              <li class="nav-item active">
+                <a class="nav-link" href="portfolio.html">Portfolio <span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="assets/GeorgeAnnaE_CV.pdf">CV</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+
+        <!-- Portfolio page header -->
+        <div class="page-header all-page-header">
+            <h3> 🍃 Stylized O'Keeffe Interactive Map 🍃</h3>
+        </div>
+
+        <div id="map-container">
+            <div id="map">
+            </div>
+        </div>
+
+        <div class="container text-center">
+            <p>The aesthetic style of my map is inspired by Georgia O’Keeffe’s vibrant landscape painting, <i>Black Mesa Landscape, New Mexico / Out Back of Marie’s II</i>, 1930. For the land, I use the colors of the mountains, hills, and forest in her landscape. The deep blues and purples, peaches and greens became the colors of the land cover and elevation layers. For the colors of the ocean and fresh water, I used shades of blue from the stream in O’Keeffe’s <i>Chama River, Ghost Ranch</i>, 1937, because Black Mesa Landscape didn’t include the necessary shades of light blue. Instead of labeling the cities, I found a flower icon (made by Freepik from www.flaticon.com) that draws to mind O’Keeffe’s well-known flower paintings. The greens of the flower icons were selected from Black Mesa Landscape. I included country and state/region labels at the mid-zoom levels to help with orientation, but they disappear at the highest and lowest zoom levels encouraging the map user to simply focus on the flowing patterns of land and water or use natural feature labels, city flowers, and the shapes of mountains and lakes to find a specific place.
+            </p>
+        </div>
+
+        <script>
+        	mapboxgl.accessToken = 'pk.eyJ1IjoiYW5uYWVnZW9yZ2UxNyIsImEiOiJjazJhcjBreGM0YnB0M21waTl2ZDNvOTFoIn0.yZRAS_QTaZwUo3bUNyfjNQ';
+            var map = new mapboxgl.Map({
+                container: 'map', // container id
+                style: 'mapbox://styles/annaegeorge17/ck55qtcvy00hq1ctg4fqnmy0y', //hosted style id
+                center: [-86.065, 40.268], // starting position
+                zoom: 1.3 // starting zoom
+            });
+        </script>
+
+        <div class="sub-header">
+            <h5> Selected Screenshots </h5>
+        </div>
+
+        <!-- portfolio pieces section -->
+        <div class="container port-container">
+            <div class="row">
+                <div class="col">
+                    <div>
+                        <div class="thumbnail portfolio-thumbnail">
+                            <a href="assets/okeeffe-screenshots/world.png">
+                                <img src="assets/okeeffe-screenshots/world.png" alt="World view screenshot" />
+                            </a>
+                        </div>
+                        <!-- <h7 class="portfolio-item-title">World View</h7> -->
+                        <p class="pic-caption">This screenshot shows the whole world. Here, you can see my choice to highlight the natural landscape, using land cover and bathymetry, over political boundaries and labels. One doesn’t need labels or boundaries to appreciate the patterns of the natural landscape.</p>
+                    </div>
+                    <div>
+                        <div class="thumbnail portfolio-thumbnail">
+                            <a href="assets/okeeffe-screenshots/northAmerica.png">
+                                <img src="assets/okeeffe-screenshots/northAmerica.png" alt="Screenshot of North America" />
+                            </a>
+                        </div>
+                        <p class="pic-caption">This shows North American continent at a similar zoom level to Asia and South America with landcover and bathymetry polygons. I chose to have dark natural labels, i.e. Labrador Sea, so they would show up well on all shades of the water.</p>
+                    </div>
+                    <div>
+                        <div class="thumbnail portfolio-thumbnail">
+                            <a href="assets/okeeffe-screenshots/africaWestCoast.png">
+                                <img src="assets/okeeffe-screenshots/africaWestCoast.png" alt="Screenshot of west coast of Africa" />
+                            </a>
+                        </div>
+                        <p class="pic-caption">This shows the west coast of Africa. Bassau, the capital city of Guinea-Bissau, is visualized as a point feature with a larger rose, while the province and regional capitals are as smaller roses.  I chose to abstract cities as a nod to O’Keeffe’s famous flower paintings and another method of directing focus to the natural landscape at higher zoom levels.</p>
+                    </div>
+                    <div>
+                        <div class="thumbnail portfolio-thumbnail">
+                            <a href="assets/okeeffe-screenshots/chimborazo.png">
+                                <img src="assets/okeeffe-screenshots/chimborazo.png" alt="Screenshot of Chimborazo" />
+                            </a>
+                        </div>
+                        <p class="pic-caption">This screenshot shows Chimborazo, an inactive volcano and the highest mountain in Ecuador. The plateaus of elevation change in this area remind me of the distinct levels of mountains O’Keeffe painted in <i>Black Mesa Landscapes</i>. In this screenshot, one can also see how the dark natural label colors are clearly visible on the tops of mountains.</p>
+                    </div>
+                </div>
+                <div class="col">
+                    <div>
+                        <div class="thumbnail portfolio-thumbnail">
+                            <a href="assets/okeeffe-screenshots/centralAsia.png">
+                                <img src="assets/okeeffe-screenshots/centralAsia.png" alt="Screenshot of central Asia" />
+                            </a>
+                        </div>
+                        <p class="pic-caption">Here, you can see central Asia. On zooming in, country names appear, so there are some reference points for the map user, but no borders, allowing the land cover patterns to be the focus of this map. For the other land cover category, which encompasses desert and hard-to-reach places, I chose the light peach color, which evokes sandy, dry places.</p>
+                    </div>
+                    <div>
+                        <div class="thumbnail portfolio-thumbnail">
+                            <a href="assets/okeeffe-screenshots/greenland.png">
+                                <img src="assets/okeeffe-screenshots/greenland.png" alt="Screenshot of Greenland" />
+                            </a>
+                        </div>
+                        <p class="pic-caption">This screenshot shows the western shore of Greenland. Landcover colors were chosen from <i>Black Mesa Landscape, New Mexico / Out Back of Marie’s II</i>, 1930. The landcover types were assigned colors that would best replicate the top-to-bottom order of the colors used by O’Keeffe based on the most common order of landcover types across a range of locations and zoom levels.</p>
+                    </div>
+                    <div>
+                        <div class="thumbnail portfolio-thumbnail">
+                            <a href="assets/okeeffe-screenshots/northeastUS.png">
+                                <img src="assets/okeeffe-screenshots/northeastUS.png" alt="Screenshot of northeast United States" />
+                            </a>
+                        </div>
+                        <p class="pic-caption">Here are the Northeastern, Mid-Atlantic, and Midwestern states of the United States. At this higher zoom-level, country names disappear, and state or province labels appear. Like the country political units, the states have labels so the user can find their location, but no outlines, because the emphasis is on the flowing natural landscape.</p>
+                    </div>
+                    <div>
+                        <div class="thumbnail portfolio-thumbnail">
+                            <a href="assets/okeeffe-screenshots/himalayas.png">
+                                <img src="assets/okeeffe-screenshots/himalayas.png" alt="Screenshot of Himalayas" />
+                            </a>
+                        </div>
+                        <p class="pic-caption">This screenshot shows the southern edge of the Himalayas. The dramatic elevation changes here offer a gorgeous gradient from white to navy to purple to peach, showing how well the colors O’Keeffe used in <i>Black Mesa Landscape</i> work together. The topography data enables gradual transitions, which are difficult to replicate in coarse data divided up into few categories, like the land cover data, and also accentuates natural features like river valleys, which are prominent in O’Keeffe’s work.</p>
+                    </div>
+                </div>
+                <div class="col">
+                    <div>
+                        <div class="thumbnail portfolio-thumbnail">
+                            <a href="assets/okeeffe-screenshots/southAmerica.png">
+                                <img src="assets/okeeffe-screenshots/southAmerica.png" alt="World view" />
+                            </a>
+                        </div>
+                        <p class="pic-caption">This screenshot zooms in on central South America and the surrounding oceans to a similar level to the central Asia screenshot. Here you can see that I used bathymetry layers to create texture and the fade from one color shade to another that is so characteristic of Georgia O’Keeffe. The blues were chosen from <i>Chama River, Ghost Ranch</i>, 1937.</p>
+                    </div>
+                    <div>
+                        <div class="thumbnail portfolio-thumbnail">
+                            <a href="assets/okeeffe-screenshots/southeasternEurope.png">
+                                <img src="assets/okeeffe-screenshots/southeasternEurope.png" alt="Screenshot of southeastern Europe" />
+                            </a>
+                        </div>
+                        <p class="pic-caption">This shows southeastern Europe. At this zoom level, there are no labels for countries anymore, but natural features are still named. This encourages the map users to orient themselves using the names of water bodies and mountains and the shapes of landmasses rather than the names of countries or cities.</p>
+                    </div>
+                    <div>
+                        <div class="thumbnail portfolio-thumbnail">
+                            <a href="assets/okeeffe-screenshots/newMexico.png">
+                                <img src="assets/okeeffe-screenshots/newMexico.png" alt="Screenshot of New Mexico" />
+                            </a>
+                        </div>
+                        <p class="pic-caption">This screenshot highlights New Mexico. Many of Georgia O’Keeffe’s landscapes were painted here. The landcover colors also follow the order of the colors in Black Mesa at a higher zoom level. Because there are few places of the world that have the green landscape category (ice), the rosettes representing region/state capitols are also green, so that the gray-green colors in <i>Black Mesa Landscape</i> are also represented in my map.</p>
+                    </div>
+                    <div>
+                        <div class="thumbnail portfolio-thumbnail">
+                            <a href="assets/okeeffe-screenshots/pacificIsland.png">
+                                <img src="assets/okeeffe-screenshots/pacificIsland.png" alt="Screenshot of an unnamed Pacific Island" />
+                            </a>
+                        </div>
+                        <p class="pic-caption">Here is an unnamed volcanic island in the Pacific Ocean. In places with a less dramatic elevation change than Chimborazo or the Himalayas, the colors fade more gradually into each other, focusing in on the colors used in different subsections of her painting – in this case the foothills in foreground of <i>Black Mesa Landscape</i>.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
