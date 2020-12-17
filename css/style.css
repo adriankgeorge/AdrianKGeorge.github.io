@@ -87,3 +87,8 @@
     width: 100%;
     padding: 2%;
 }
+
+.bib {
+    text-indent: -36px; 
+    padding-left: 36px;
+}
