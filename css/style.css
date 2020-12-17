@@ -39,7 +39,6 @@
 .portfolio-item-title {
     text-align: center;
     font-weight: 600;
-
 }
 
 .portfolio-subheader {
@@ -73,4 +72,12 @@
     text-align: center;
     line-height: normal;
     padding-bottom: 1%
+}
+
+.taxon {
+    padding: 3% 20%
+}
+
+.map-rm {
+    padding: 1% 2%
 }
