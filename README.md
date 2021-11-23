@@ -1,2 +1,2 @@
 # AdrianKGeorge.github.io
-Personal website for Adrian George
+Personal website built with Bootstrap by Adrian George
